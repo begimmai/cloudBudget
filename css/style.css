@@ -1,0 +1,267 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", "sans-serif";
+  width: 1340px;
+}
+.header {
+  background-image: url(../images/Bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px;
+}
+ul {
+  display: flex;
+}
+.hero {
+  width: 30%;
+  position: absolute;
+  left: 35%;
+}
+.hero-title {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.hero,
+.hero-description {
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 30px;
+}
+.header li {
+  list-style: none;
+  padding: 0 10px;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+.user-block {
+  width: 50px;
+  height: 16px;
+  padding: 10px 20px;
+}
+.hero-btn {
+  background-color: #fff;
+  color: red;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.second {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 120px;
+}
+.left {
+  width: 45%;
+}
+.left h2 {
+  font-size: 36px;
+  font-weight: 550;
+  color: #000000;
+}
+.left p {
+  line-height: 19px;
+  text-align: justify;
+}
+.left span {
+  color: red;
+}
+.right {
+  width: 40%;
+}
+.third {
+  background-color: #fcfafa;
+  padding: 80px 0;
+}
+.third h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 550;
+  color: #000000;
+}
+.opp {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 120px 100px 100px;
+}
+.rel {
+  position: relative;
+  margin: 14px;
+}
+.desc {
+  width: 250px;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 25px 20px;
+  margin: 0 20px 0 30px;
+  line-height: 21px;
+  position: absolute;
+  top: 100px;
+}
+.desc1 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.desc p,
+.desc span {
+  font-size: 12px;
+  font-weight: 400;
+}
+.desc span {
+  color: red;
+}
+.forth {
+  background-color: #fff;
+  padding: 80px 160px;
+}
+.tech {
+  width: 200px;
+}
+.forth h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 550;
+  color: #000000;
+}
+.forth .rel {
+  margin: 0 60px;
+}
+.forth-f {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-top: 80px;
+}
+.abs {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 35px;
+  left: 25px;
+}
+.tech p {
+  text-align: center;
+}
+.tech h3 {
+  text-align: center;
+}
+.fifth {
+  background-color: #ed4c5c;
+  display: flex;
+  justify-content: space-around;
+  padding: 100px;
+}
+.fifth .left h2,
+.fifth .left p {
+  color: #fff;
+}
+.fifth .left p {
+  text-align: justified;
+  margin-top: 50px;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+  margin: 0 10px;
+}
+.contact .left {
+  width: 60%;
+  margin-left: 30px;
+}
+input {
+  width: 500px;
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 2px solid #cbcdce;
+  border-radius: 5px;
+}
+.form {
+  margin-left: 100px;
+}
+input {
+  border: 1px solid #333;
+}
+input[type="submit"] {
+  width: 150px;
+  background-color: #ed4c5c;
+  color: #fff;
+  border: 2px solid transparent;
+  text-transform: uppercase;
+}
+footer {
+  margin: 100px;
+  padding-left: 50px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+footer a {
+  color: #ed4c5c;
+}
+.noselect {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.locked {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+@media (max-width: 760px) {
+  body {
+    width: 100%;
+  }
+  .second {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .second .right {
+    margin-top: 20px;
+  }
+  .forth-f,
+  .third,
+  .fifth,
+  .opp {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .left,
+  .tech,
+  .rel {
+    width: 100%;
+  }
+  .desc {
+    width: 90%;
+  }
+  .tech h3 {
+    margin-top: 30px;
+  }
+  footer {
+    width: 100%;
+  }
+  .opp .rel {
+    margin-top: 20px;
+  }
+}
